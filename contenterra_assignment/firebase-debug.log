@@ -1,0 +1,41 @@
+[debug] [2023-02-12T10:12:06.313Z] ----------------------------------------------------------------------
+[debug] [2023-02-12T10:12:06.315Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\SHAMSHAD\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-02-12T10:12:06.316Z] CLI Version:   11.22.0
+[debug] [2023-02-12T10:12:06.316Z] Platform:      win32
+[debug] [2023-02-12T10:12:06.316Z] Node Version:  v16.16.0
+[debug] [2023-02-12T10:12:06.317Z] Time:          Sun Feb 12 2023 15:42:06 GMT+0530 (India Standard Time)
+[debug] [2023-02-12T10:12:06.318Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-02-12T10:12:06.396Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-02-12T10:12:06.397Z] > authorizing via signed-in user (imer.97087@gmail.com)
+[debug] [2023-02-12T10:12:06.397Z] [iam] checking project contenterraassignment for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-02-12T10:12:06.400Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/contenterraassignment:testIamPermissions [none]
+[debug] [2023-02-12T10:12:06.400Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/contenterraassignment:testIamPermissions x-goog-quota-user=projects/contenterraassignment
+[debug] [2023-02-12T10:12:06.400Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/contenterraassignment:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-02-12T10:12:08.009Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/contenterraassignment:testIamPermissions 200
+[debug] [2023-02-12T10:12:08.009Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/contenterraassignment:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-02-12T10:12:08.013Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/contenterraassignment [none]
+[debug] [2023-02-12T10:12:08.530Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/contenterraassignment 200
+[debug] [2023-02-12T10:12:08.531Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/contenterraassignment {"projectId":"contenterraassignment","projectNumber":"543974669792","displayName":"contenterraassignment","name":"projects/contenterraassignment","resources":{"hostingSite":"contenterraassignment"},"state":"ACTIVE","etag":"1_e1aff8e9-a239-4fa4-8de7-5af3093222cb"}
+[info] 
+[info] === Deploying to 'contenterraassignment'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2023-02-12T10:12:08.556Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/contenterraassignment/versions [none]
+[debug] [2023-02-12T10:12:08.557Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/contenterraassignment/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2023-02-12T10:12:09.896Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/contenterraassignment/versions 500
+[debug] [2023-02-12T10:12:09.897Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/contenterraassignment/versions {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2023-02-12T10:12:10.081Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500
+  }
+}
