@@ -1,0 +1,22 @@
+*{
+      padding: 0%;
+      margin: 0%;
+}
+
+.mainDiv{
+      /* border: 1px solid red; */
+      display: flex;
+      width: 1280px;
+      height: 720px;
+      flex-wrap: wrap;
+      margin: auto;
+      gap: 20px;
+      text-align: justify;
+}
+
+.childDiv{
+      border: 1px solid green;
+      /* width: 500px; */
+      padding: 20px;
+      
+}
